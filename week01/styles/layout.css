@@ -1,0 +1,46 @@
+body {
+    display: grid;
+    grid-template: auto 1fr auto;
+}
+
+header{
+    background: #333;
+    padding: 2rem;
+    grid-column: 1/4;
+}
+
+.navigation {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #333;
+    align-items: center;
+}
+
+.navigation li{
+    flex: 1 1 auto;
+}
+
+.navigation a{
+    display: block;
+    color: aquamarine;
+    padding: 0.75rem;
+    text-align: center;
+}
+
+.main {
+    background: #230e78;
+    grid-column: 1/2;
+}
+
+.aside-sidebar {
+    background: #9c0101;
+    grid-column: 2/4;
+}
+
+footer {
+    background: gray;
+    padding: 2rem;
+    text-align: center;
+    grid-column: 1/4;
+}
