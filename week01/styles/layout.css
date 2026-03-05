@@ -1,24 +1,28 @@
 body {
     display: grid;
     grid-template: auto 1fr auto;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto auto 1fr auto;
 }
 
 header{
     background: #333;
     padding: 2rem;
-    grid-column: 1/4;
+    grid-column: 1/-1;
 }
-
+nav {
+    grid-column: 1/-1;
+}
 .navigation {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     background-color: #333;
-    align-items: center;
+    text-align: center;
 }
 
 .navigation li{
-    flex: 1 1 auto;
+    flex: 1;
 }
 
 .navigation a{
@@ -31,11 +35,13 @@ header{
 .main {
     background: #433678;
     grid-column: 1/2;
+    padding: 2rem;
 }
 
 .aside-sidebar {
     background: #a43e3e;
-    grid-column: 2/4;
+    grid-column: 2/3;
+    padding: 2rem;
 }
 
 footer {
