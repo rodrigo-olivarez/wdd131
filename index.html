@@ -6,32 +6,49 @@
     <title>WDD 131 - Dynamic Web Fundamentals - Rodrigo Olivarez</title>
     <meta name="Description" content="WDD 131 - DWF - Rodrigo - This is a new page for the school with efforts and joy.">
     <meta name="Author" content="Rodrigo Olivarez">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js"></script>
 </head>
 <body>
     <header>
         <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
         <nav>
-            <a href="linkedin.com/in/josé-rodrigo-olivarez-marcelino-a9172b312">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/jos%C3%A9-rodrigo-olivarez-marcelino-a9172b312/">LinkedIn</a>
             <a href="https://byupw.instructure.com/">I-Learn</a>
             <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/3-ne/27?lang=eng&id=p27#p27">Scripture</a>
             <a href="#">Final Project</a>
         </nav>
     </header>
-
     <main>
-        <h1>Rodrigo Olivarez</h1>
-        <section class="card">
-            <h2></h2>
-            <img src="" alt="">
-            <p></p>
-        </section>
-        <section class="card">
-            <h2></h2>
-            <img src="" alt="">
-            <p></p>
-        </section>
+        <h1>Jose Rodrigo Olivarez M.</h1>
+        <div class="grid">
+            <section class="card">
+                <h2>About Me</h2>
+                <div class="card-container">
+                    <img src="images/profile.jpg" alt="Rodrigo" class="profile">
+                    <p>My name is Rodrigo, I was born in Veracruz and live in CDMX for 5 years. I am working in the Mexico City Temple, my area is the laundry. I love the musicals and the cinema, eventually I learn new hobbies like crochet, piano and guitar. The weekends I speeding my time in the Zocalo or Museums. </p>
+                    <div class="location">
+                        <h3>CDMX, México</h3>
+                        <div class="location-detail">
+                            <img src="images/flag_of_mexico.png" alt="Flag_mexico" class="flag">
+                            <p>Mexico is beautiful, it has many towns, delicious food, and you can find a lot of nature along the streets; there's
+                                always something new to visit, and there's a lot of diversity.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="card">
+                <h2>Web Dev Resources</h2>
+                <div class="card-container">
+                    <ul>
+                        <li><a href="https://developer.mozilla.org/es/?hl=es-US" target="_blank">MDN Web Docs</a></li>
+                        <li><a href="https://css-tricks.com/?hl=es-US" target="_blank">CSS Tricks</a></li>
+                        <li><a href="https://www.w3schools.com/" target="_blank">W3 Schools</a></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
     </main>
-
     <footer>
         <p><span id="currentyear"></span> - Rodrigo Olivarez - CDMX</p>
         <p id="lastModified"></p>
