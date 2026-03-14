@@ -1,0 +1,22 @@
+@media (min-width: 600px) {
+    #menu {
+        display: none;
+    }
+
+    h1 {
+        display: block;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .navigation {
+        display: flex; 
+    }
+
+    .temples {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
