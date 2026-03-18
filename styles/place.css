@@ -36,6 +36,13 @@ main {
     text-align: center;
 }
 
+.weather-icon {
+    width: 75px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
 footer {
     background-color: var(--color3);
     color: var(--color2);
