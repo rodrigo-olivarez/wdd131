@@ -1,7 +1,10 @@
-@media (min-width: 800px) {
-    .weather h3::after {
+@media (min-width: 1000px) {
+    .weather h2::after {
         content: " ☀️";
         font-size: 1.2rem;
+    }
+    .weather-icon {
+            display: none;
     }
 }
 
@@ -35,9 +38,4 @@ main {
 .weather {
     grid-column: 3;
     margin-right: 20px;
-}
-
-.weather h3::after {
-    content: " ☀️";
-    font-size: 1.2rem;
 }
