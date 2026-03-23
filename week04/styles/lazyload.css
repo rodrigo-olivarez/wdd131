@@ -1,0 +1,22 @@
+h1 , footer{
+    text-align: center;
+}
+
+
+main {
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+}
+
+img {
+    width: 100%;
+    animation: fade 15px;
+    background: black;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+}
