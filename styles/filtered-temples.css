@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    color: #eee;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: black;
+}
+
+nav a {
+    display: block;
+    color: white;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+nav a:hover {
+    text-decoration: overline;
+}
+
+.navigation {
+    display: none;
+}
+
+.navigation.open {
+    display: flex;
+}
+
+h2 {
+    text-align: center;
+}
+
+.temples {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.temple-card {
+    background-color: hsl(0, 100%, 94%);
+    border:  1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px;
+}
+
+.temple-card img {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+}
+
+#menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    background-color: #eee;
+    color: #000;
+    margin-left: auto;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❌";
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+    background-color: #000000;
+    padding: 1.5rem;
+    font-style: italic;
+    color: white;
+}
